@@ -1,0 +1,421 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat-Regular.ttf);
+}
+
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero_section {
+    max-width: 144rem;
+}
+
+.header {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo {
+    align-items: center;
+    margin: 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_navigation {
+    display: flex;
+    gap: 6rem;
+    margin: 0;
+    margin-left: 6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #3E3E3E;
+    font-size: 2rem;
+}
+
+a:hover {
+    font-weight: 700;
+}
+
+.logo_whh {
+    margin: 0;
+}
+
+.logo_whh img{
+    max-width: 50px;
+    padding: 5px;
+}
+
+.help_btn_wrapper {
+    margin: 0;
+    margin-right: 6rem;
+}
+
+.help_btn {
+    border-radius: 5rem;
+    border: solid 1px;
+    text-align: center;
+}
+
+.help_btn a {
+    display: block;
+    padding: 1rem 3rem;
+}
+
+.bear_banner {
+    margin: 0 6rem;
+    max-width: 132rem;
+    height: 70rem;
+    background-image: url(/images/bear.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+}
+
+h1 {
+    color: white;
+    font-size: 10em;
+    margin-left: 4rem;
+
+    text-shadow: 2px 2px 3px #3E3E3E;
+}
+
+.bear_banner p {
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    margin-right: 4rem;
+    margin-top: 30rem;
+    max-width: 37rem;
+    justify-content: end;
+    text-shadow: 2px 2px 3px black;
+}
+
+.about_us {
+    max-width: 144rem;
+}
+
+.otter {
+    width: 40rem;
+    height: 40rem;
+    background-image: url(/images/otter.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+    margin-left: 6rem;
+}
+
+.about_us_wrapper {
+    display: flex;
+    padding-top: 10rem;
+}
+
+.our_mission {
+    max-width: 80rem;
+    margin: 0 6rem;
+}
+
+.first {
+    color: #3E3E3E;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.second {
+    font-size: 1.9rem;
+    margin-top: 5.5rem;
+}
+
+#orange_btn {
+    margin-top: 5.5rem;
+    background-color: #BC5E28;
+    border: none;
+}
+
+#orange_btn a {
+    display: block;
+    color: white;
+}
+
+.achievements_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 6rem;
+}
+
+.achievements {
+    color: #3E3E3E;
+    text-align: center;
+}
+
+.achievements h2 {
+    font-size: 5rem;
+    margin-top: 10rem;
+}
+
+.achievements p {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.questions {
+    max-width: 144rem;
+}
+
+.photos_questions {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photos {
+    margin: 0 6rem;
+}
+
+.animal {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 5rem;
+}
+
+#tiger {
+    background-image: url(/images/tiger.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+}
+
+#reindeer {
+    background-image: url(/images/reindeer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 4rem;
+}
+
+.questions_block {
+    max-width: 78rem;
+    margin-right: 6rem;
+}
+
+.questions_block h2 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    color: #BC5E28;
+}
+
+.questions_block p {
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.accordion {
+    max-width: 80rem;
+    margin: 3rem auto;
+    border-top: 0.1rem solid #3E3E3E;
+}
+
+.accordion-item {
+    border-bottom: 0.1rem solid #3E3E3E;
+    padding: 1.5rem 0;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.accordion-header::after {
+    content: "→";
+    font-size: 3rem;
+    margin-left: 1rem;
+    transition: transform 0.3s;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content-inner {
+    line-height: 1.6;
+    color: #3E3E3E;
+    font-size: 1.6rem;
+}
+
+.accordion-checkbox {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .accordion-header::after {
+    transform: rotate(90deg);
+}
+
+input[type="checkbox"]:checked ~ .accordion-content {
+    max-height: max-content;
+}
+
+.last_donation_page {
+    margin: 0 auto;
+    max-width: 144rem;
+}
+
+.lynx_donation_wrapper {
+    margin: 10rem 6rem;
+    max-width: 132rem;
+    height: 70rem;
+    background-image: url(/images/lynx.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+}
+
+.lynx_donation h2{
+    padding: 25rem 6rem 0 6rem;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.lynx_donation p{
+    padding: 4rem 6rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#white_btn {
+    max-width: 34%;
+    color: white;
+    background-color: rgba(205, 214, 219, 0.5);
+}
+
+#white_btn a {
+    color: white;
+}
+
+.footer_wrapper{
+    max-width: 144rem;
+    
+}
+
+.footer_info {
+    border-top: solid 0.1rem #3E3E3E;
+    padding-top: 3rem;
+    margin: 0 6rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.info {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    color: #3E3E3E;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    padding-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.info ul li a {
+    font-size: 1.4rem;
+}
+
+.info input[type="email"] {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 0.1rem solid #3E3E3E;
+    border-radius: 0.4rem;
+}
+
+#subscribe label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+  
+.social-buttons {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+  
+.social-buttons button {
+    margin: 0;
+    padding: 0.8rem 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+  
+.social-buttons button:hover {
+    background-color: #3E3E3E;
+    color: #fff;
+}
+
+.copyright_wrapper {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 144rem;
+}
+
+.bottom_logo {
+    margin: 0;
+}
+
+.bottom_logo img {
+    height: 10rem;
+    margin: 0 6rem;
+}
+
+.address {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.creators {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 6rem;
+}
